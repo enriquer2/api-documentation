@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<header>
+    <h1>Mortgage Calculator</h1>
+</header>
+<div class="content">
+    <div class="form">
+        <div>
+            <label>Principal:</label>
+            <input type="text" id="principal" value="200000"/>
+        </div>
+        <div>
+            <label>Years:</label>
+            <input type="text" id="years" value="30"/>
+        </div>
+        <div>
+            <label htmlFor="rate">Rate:</label>
+            <input type="text" id="rate" value="5.0"/>
+        </div>
+        <div>
+            <label htmlFor="calcBtn"></label>
+            <button id="calcBtn">Calculate</button>
+        </div>
+    </div>
+    <h2>Monthly Payment: <span id="monthlyPayment" class="currency"></span></h2>
+    <div>
+        <div>
+            <h2>Prueba: <span id="p"></span></h2>
+            <h3>Hello</h3>
+        </div>
+    </div>
+    <div class="form">
+        <div>
+            <label>born:</label>
+            <input type="text" id="born" value="200000"/>
+        </div>
+        <div>
+            <label>Date:</label>
+            <input type="text" id="date" value="30"/>
+        </div>
+        <div>
+            <label htmlFor="name">Name:</label>
+            <input type="text" id="name" value="Pepe"/>
+        </div>
+        <div>
+            <label htmlFor="calcBtn1"></label>
+            <button id="calcBtn1">Calculate</button>
+        </div>
+    </div>
+    <h2 id="name"><span id="age" class="currency"></span></h2>
+
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>
