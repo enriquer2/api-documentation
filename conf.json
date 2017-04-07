@@ -3,7 +3,7 @@
         "allowUnknownTags": true
     },
     "source": {
-        "include": ["src/js/decorators/rest/path.js", "src/js/decorators/rest/summary.js", "src/js/main.js"],
+        "include": ["src/js/"],
         "includePattern": ".+\\.js(doc|x)?$",
         "excludePattern": "(^|\\/|\\\\)_"
     },
