@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>main.js - Documentation</title>
+
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+</head>
+<body>
+
+<input type="checkbox" id="nav-trigger" class="nav-trigger" />
+<label for="nav-trigger" class="navicon-button x">
+  <div class="navicon"></div>
+</label>
+
+<label for="nav-trigger" class="overlay"></label>
+
+<nav>
+    <h2><a href="index.html">Home</a></h2><h3>Classes</h3><ul><li><a href="Point.html">Point</a><ul class='methods'><li data-type='method'><a href="Point.html#.fromString">fromString</a></li><li data-type='method'><a href="Point.html#getX">getX</a></li><li data-type='method'><a href="Point.html#getY">getY</a></li></ul></li></ul><h3>Global</h3><ul><li><a href="global.html#calculateAge">calculateAge</a></li><li><a href="global.html#calculateMonthlyPayment">calculateMonthlyPayment</a></li><li><a href="global.html#nosale">nosale</a></li></ul>
+</nav>
+
+<div id="main">
+    
+    <h1 class="page-title">main.js</h1>
+    
+
+    
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * It is a By impossible of in difficulty discovered celebrated ye.
+ * Justice joy manners boy met resolve produce. Bed head loud next plan rent had easy
+ * add him. As earnestly shameless elsewhere defective estimable fulfilled of.
+ * Esteem my advice it an excuse enable. Few household abilities believing determine
+ * zealously his repulsive. To open draw dear be by side like. 
+ * @sumary A concise summary
+ * 
+ * 
+ * @param {int} principal - Amount of money that you earned
+ * @param {integer} years - How many years are you been working
+ * @param {float} rate - Put a significant rate
+ */
+
+
+var calculateMonthlyPayment = function(principal, years, rate) {
+    if (rate) {
+        var monthlyRate = rate / 100 / 12;
+    }
+    var monthlyPayment = principal * monthlyRate / (1 - (Math.pow(1 / (1 + monthlyRate), years * 12)));
+    return monthlyPayment;
+};
+
+document.getElementById('calcBtn').addEventListener('click', function() {
+    var principal = document.getElementById("principal").value;
+    var years = document.getElementById("years").value;
+    var rate = document.getElementById("rate").value;
+    var monthlyPayment = calculateMonthlyPayment(principal, years, rate);
+    document.getElementById("monthlyPayment").innerHTML = monthlyPayment.toFixed(2);
+});
+
+/**
+ * 
+ * @param {interger} born 
+ * @param {interger} date 
+ * @param {string} name Doesn't work 
+ */
+
+var calculateAge = function(born, date, name) {
+    if (born) {
+        var age = date - born;
+    }
+    var age = date - born;
+    return age;
+};
+
+document.getElementById('calcBtn1').addEventListener('click', function() {
+    var born = document.getElementById("born").value;
+    var date = document.getElementById("date").value;
+    var name = document.getElementById("name").value;
+    var age = calculateAge(born, date, name);
+    document.getElementById("age").innerHTML = age.toFixed(2);
+});
+
+/** Class representing a point. 
+ * This is a description of the class
+ */
+class Point {
+    /**
+     * Create a point.
+     * @param {number} x - The x value.
+     * @param {number} y - The y value.
+     */
+    constructor(x, y) {
+        // ...
+    }
+
+    /**
+     * Get the x value.
+     * @return {number} The x value.
+     */
+    getX() {
+        // ...
+    }
+
+    /**
+     * Get the y value.
+     * @return {number} The y value.
+     */
+    getY() {
+        // ...
+    }
+
+    /**
+     * Convert a string containing two comma-separated numbers into a point.
+     * @param {string} str - The string containing two comma-separated numbers.
+     * @return {Point} A Point object.
+     */
+    static fromString(str) {
+        // ...
+    }
+}
+
+/**
+ * @description PRIMERA descripcion shfihusofiua hdofuhs fuhaosdfuh oaisduhfoi ausdhfiu hsofi hausfuhasoidfuhasoidhfu oaisudhf oaisudhfoiaushdfoiu hsduhsadfuh oaidushf 
+ * @function
+ * @param  {(string|string[])} [somebody=John Doe] - Allow one or another type
+ * @param {*} world - allow whatever yoou want
+ * 
+ * @summary HHHHHHHHHHHHHHHHHHHHHHHHVVVVVVVVVV VVVVVVVVVVVVSSSSSSSSSSSSSSSSSAAAAAAAAAAAAAA
+ */
+function nosale(somebody, world) {
+    if (!somebody) {
+        somebody = 'John Doe';
+    } else if (Array.isArray(somebody)) {
+        somebody = somebody.join(', ');
+    }
+    alert('Hello ' + somebody);
+
+    console.log('Hello ' + JSON.stringify(world));
+
+}</code></pre>
+        </article>
+    </section>
+
+
+
+
+</div>
+
+<br class="clear">
+
+<footer>
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a> on Fri Apr 07 2017 11:16:21 GMT+0200 (Hora de verano romance) using the Minami theme.
+</footer>
+
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+</body>
+</html>
