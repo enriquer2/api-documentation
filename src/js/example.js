@@ -1,7 +1,6 @@
-/**
- * @file Manages the configuration settings for the widget.
- * @author Alfatex extremo
- */
+// @file Manages the configuration settings for the widget.
+// @author Alfatex extremo
+
 
 
 /**
@@ -306,11 +305,11 @@ function foo(x) {}
  */
 function baz(x) {}
 
-/**
- * 
- * @file This is my first script.
- * @copyright R2 2017
- */
+
+
+// @file This is my first script.
+// @copyright R2 2017
+
 
 /**
  * @class
