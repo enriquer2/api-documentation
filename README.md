@@ -1,3 +1,6 @@
-#Description
+#Documentation
 
-Esto es una description of...
+This is a brief example of dinamic documentation with static html github page.
+
+##Use
+```JSDoc
