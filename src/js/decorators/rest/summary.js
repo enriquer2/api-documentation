@@ -2,7 +2,11 @@
 import { setMeta } from '../api';
 import { onlyOnMethods } from '../utils';
 /**
+ * It save in Metadata a brief summary
  * @function
+ * @export
+ * @example @Sumary('search client')
+ * addPath(path)
  * @returns {function} Add information in Metadata
  * @param {string} params A small summary of this function
  */
